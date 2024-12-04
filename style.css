@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -6,28 +6,30 @@
     text-decoration: none;
 
 }
-body{
+
+body {
     background: #222;
 }
-.card{
+
+.card {
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548b);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
-    padding:40px 35px; 
+    padding: 40px 35px;
     text-align: center;
 }
 
-.search{
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.search>input{
+.search>input {
     border: 0px;
     outline: 0px;
     background-color: #ebfffc;
@@ -40,7 +42,7 @@ body{
     font-size: 18px;
 }
 
-.search > button{
+.search>button {
     border: 0px;
     outline: 0px;
     background-color: #ebfffc;
@@ -48,26 +50,50 @@ body{
     width: 60px;
     height: 60px;
     cursor: pointer;
-    
+
 }
 
 
-.weather{
+.weather {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px 0px;
     gap: 10px;
 }
-.temp{
+
+.temp {
     font-size: 80px;
 
 }
-.city{
+
+.city {
     font-size: 40px;
 
 }
-.country{
+
+.country {
     font-size: 20px;
-    
+
 }
+
+/* Making Website Responsive */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(193, 229, 241);
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .search> input{
+        flex: 0;
+        padding: 20px;
+        margin: 0px;
+    }
+    .weather{
+        margin-top: 10px;
+    }
+  }
