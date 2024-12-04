@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #222;
+    background: lightblue;
 }
 
 .card {
@@ -80,20 +80,23 @@ body {
 /* Making Website Responsive */
 @media only screen and (max-width: 600px) {
     body {
-      background-color: rgb(193, 229, 241);
+        background-color: rgb(193, 229, 241);
     }
-    .search{
+
+    .search {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         gap: 20px;
     }
-    .search> input{
+
+    .search>input {
         flex: 0;
         padding: 20px;
         margin: 0px;
     }
-    .weather{
+
+    .weather {
         margin-top: 10px;
     }
-  }
+}
